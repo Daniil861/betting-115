@@ -1,0 +1,70 @@
+.bet-box {
+	transition: all 0.3s ease 0s;
+
+	&._hold {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+	// .bet-box__body
+
+	&__body {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: 10px;
+
+		width: 100%;
+		height: 49px;
+
+		padding-inline: 15px;
+	}
+
+	&__count-box {
+		position: relative;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		column-gap: 10px;
+
+		width: 123px;
+		height: 45px;
+
+		border-radius: 11px;
+		border: 2px solid #a3a3a3;
+		background: linear-gradient(180deg, #575757 0%, #303030 100%);
+	}
+
+	&__bet {
+		min-width: 40px;
+		text-align: left;
+		color: #fff;
+	}
+
+	// .bet-box__minus
+
+	&__button {
+		flex: 0 0 55px;
+		width: 55px;
+		height: 55px;
+		border-radius: 50%;
+
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		transition: all 0.3s ease 0s;
+
+		&:active {
+			transform: translateY(2px);
+		}
+
+		&[data-button="bet-minus"] {
+			background-image: url("@img/icons/btn-left.png");
+		}
+		&[data-button="bet-plus"] {
+			background-image: url("@img/icons/btn-right.png");
+		}
+	}
+}

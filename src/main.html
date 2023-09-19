@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Betting-115"
+})
+
+<body>
+	<div class="wrapper">
+		<div class="wrapper__body">
+			<div class="wrapper__main main">
+				<div class="main__body">
+					@@include('html/_score-box.htm',{"parent":"main__score-box"})
+					<div class="main__buttons-box">
+						<div class="main__buttons">
+							<button type="button" data-button="game"
+								class="main__button button _fz-20 _upper"><span>Play</span></button>
+							<button type="button" data-button="forecast"
+								class="main__button button _fz-20 _upper"><span>FOOTBALL
+									FORECAST</span></button>
+							<button type="button" data-button="slot" class="main__button button _fz-20 _upper"><span>PLAY
+									SLOT</span></button>
+						</div>
+
+						<button type="button" data-button="privacy" class="main__button button _fz-20 _upper"><span>Privacy
+								Policy</span></button>
+					</div>
+					<div class="main__hero">
+						<img src="@img/other/hero.png" alt="Image">
+					</div>
+				</div>
+			</div>
+
+			<div class="wrapper__game game">
+				<div class="game__body">
+					<div class="game__field field">
+						<div class="field__body">
+							<div class="field__hero"><img src="@img/other/hero.png" alt="Image"></div>
+							<div class="field__controls">
+								<button type="button" data-button="btn-left" class="field__button"></button>
+								<button type="button" data-button="btn-right" class="field__button"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="game__header header">
+					<div class="header__body">
+						<button type="button" data-button="game-home"
+							class="header__button-home button-home"><span>Back</span></button>
+						<div class="header__score-box score-box">
+							<div class="score-box__body">
+								<div class="score-box__icon icon-game"></div>
+								<div class="score-box__score score _fz-20">0</div>
+							</div>
+						</div>
+						<div class="header__time-box time-box">
+							<div class="time-box__body">
+								<div class="time-box__time _fz-34">0:30</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="wrapper__forecast forecast">
+				<div class="forecast__body">
+					<div class="forecast__header header">
+						<div class="header__body">
+							<button type="button" data-button="forecast-home"
+								class="header__button button-home"><span>Back</span></button>
+						</div>
+					</div>
+					<div class="forecast__news">
+						<div class="forecast__item item-forecast">
+							<div class="item-forecast__body">
+								<div class="item-forecast__image -ibg">
+									<img src="@img/news/news-1.png" alt="Image">
+								</div>
+								<div class="item-forecast__title">The ex-Barcelona B player was included in the application of
+									the 2DROTS media club for the Russian Cup</div>
+								<div class="item-forecast__likes-box">
+									<div class="item-forecast__like-count">1</div>
+									<div class="item-forecast__icon"></div>
+								</div>
+							</div>
+						</div>
+						<div class="forecast__item item-forecast">
+							<div class="item-forecast__body">
+								<div class="item-forecast__image -ibg">
+									<img src="@img/news/news-2.png" alt="Image">
+								</div>
+								<div class="item-forecast__title">Arsenal wants to extend the contract with the key defender of
+									the club</div>
+								<div class="item-forecast__likes-box">
+									<div class="item-forecast__like-count">5</div>
+									<div class="item-forecast__icon"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="forecast__item item-forecast">
+							<div class="item-forecast__body">
+								<div class="item-forecast__teams teams-item-forecast">
+									<div class="teams-item-forecast__body">
+										<div class="teams-item-forecast__icon"><img src="@img/news/icon-1.png" alt="Icon"></div>
+										<div class="teams-item-forecast__data-box">
+											<div class="teams-item-forecast__date">29.09.2023</div>
+											<div class="teams-item-forecast__text">VS</div>
+										</div>
+										<div class="teams-item-forecast__icon"><img src="@img/news/icon-2.png" alt="Icon"></div>
+									</div>
+								</div>
+								<div class="item-forecast__footer">
+									<div class="item-forecast__forecast">Our forecast 5:2</div>
+									<div class="item-forecast__likes-box">
+										<div class="item-forecast__like-count">0</div>
+										<div class="item-forecast__icon"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="forecast__item item-forecast">
+							<div class="item-forecast__body">
+								<div class="item-forecast__image -ibg">
+									<img src="@img/news/news-3.png" alt="Image">
+								</div>
+								<div class="item-forecast__title">PSG lost to Nice in the Ligue 1 match</div>
+								<div class="item-forecast__likes-box">
+									<div class="item-forecast__like-count">1</div>
+									<div class="item-forecast__icon"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			@@include('html/_slot.htm',{"name":"1"})
+
+			@@include('html/_final.htm',{})
+
+
+		</div>
+	</div>
+
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
