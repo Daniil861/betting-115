@@ -2,7 +2,6 @@ import gsap from 'gsap';
 
 import { deleteMoney, noMoney, addMoney } from './functions';
 import { } from './script';
-import { showFinalScreen } from './finalScreen';
 
 //============
 
@@ -273,8 +272,7 @@ const config1: IConfig = {
 				const currintWin = Number(localStorage.getItem('current-bet')) * configSlot.winCoeff_1;
 
 				addMoney(currintWin, '.score', 1000, 2000);
-				showFinalScreen(currintWin, 'win');
-			} else showFinalScreen(Number(localStorage.getItem('current-bet')));
+			}
 		}
 
 	},
